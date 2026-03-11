@@ -1,0 +1,44 @@
+h1 {
+    background-color: grey;
+}
+
+h2 {
+    background-color: greenyellow;
+}
+
+.class-1{
+    background-color: red;
+}
+
+#id-1{
+    background-color: blue;
+}
+
+#id-1,.class-1{
+    color: aquamarine;
+}
+
+*{
+    background-color: aqua;
+}
+
+ul li {
+    color: green;
+}
+
+ul a {
+    background-color: brown;
+}
+
+[type] {
+    background-color: blanchedalmond;
+}
+
+[href] {
+    font-size: 50px;
+}
+
+h1:hover {
+    font-size: 50px;
+}
+
