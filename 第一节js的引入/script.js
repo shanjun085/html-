@@ -1,0 +1,1 @@
+document.write("<h1>小黑好帅</h1>");
