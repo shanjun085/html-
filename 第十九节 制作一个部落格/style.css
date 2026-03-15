@@ -1,0 +1,43 @@
+        .article {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* 按钮样式 - 核心新增部分 */
+        #btn {
+            /* 基础样式 */
+            padding: 20px 40px; /* 内边距：上下8px，左右16px，让按钮更饱满 */
+            margin: 10px 0; /* 外边距，和文章块、输入框拉开距离 */
+            background-color: #4285f4; /* 谷歌蓝，清爽的主色调 */
+            color: white; /* 文字白色 */
+            border: none; /* 去掉默认边框 */
+            border-radius: 8px; /* 圆角，和文章块风格统一 */
+            font-size: 24px; /* 字体大小 */
+            cursor: pointer; /* 鼠标悬停时显示手型 */
+            transition: background-color 0.2s ease; /* 背景色过渡动画，更丝滑 */
+            min-width: 320px;
+        }
+
+        /* 鼠标悬停状态 */
+        #btn:hover {
+            background-color: #3367d6; /* 悬停时颜色稍深 */
+        }
+
+        /* 点击按下状态 */
+        #btn:active {
+            background-color: #2d5bba; /* 点击时颜色更深 */
+            transform: scale(0.98); /* 轻微缩小，模拟按压感 */
+        }
+
+        /* 可选：给输入框也加简单样式，整体更协调 */
+        #title, #content {
+            display: block; /* 独占一行，排版更整齐 */
+            width: 300px; /* 固定宽度 */
+            margin: 8px 0; /* 外边距 */
+            padding: 8px; /* 内边距 */
+            border: 1px solid #ccc; /* 边框 */
+            border-radius: 4px; /* 圆角 */
+            font-size: 14px;
+        }
