@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript" src="../jquery-3.6.0.js"></script>
+<script type="text/javascript">
+    function btnClick() {
+        //使用js方法获取DOM对象
+        var domBtn = document.getElementById("btn");
+        alert("1=" + domBtn.value)
+        //使用jQuery函数 $() 把DOM对象转换jQuery对象
+        var $btn = $(domBtn);
+        //调用jQuery方法val()
+        alert("2=" + $btn.val());
+    }
+</script>
+    <div align="center">
+        <input type="button" id="btn" value="我要成为jQuery对象" onclick="btnClick()" />
+    </div>
+</body>
+</html>

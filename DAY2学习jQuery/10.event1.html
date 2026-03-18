@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fun1</title>
+    <style type="text/css">
+      div {
+        background: blue;
+      }
+    </style>
+    <script type="text/javascript" src="../jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+      //在dom对象创建好后，绑定事件
+      $(function () {
+        $("#btn1").click(function () {
+          //使用append增加dom对象
+          $("#mydiv").append(
+            "<input id='newBtn' type='button' value='我是新加入的按钮'/>"
+          );
+          //使用on给按钮绑定事件
+          $("#newBtn").on("click", function () {
+            alert("新建的按钮被单击了");
+          });
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="mydiv">我是一个div,需要增加一个button</div>
+    <button id="btn1">创建一个button,绑定一个click</button><br />
+  </body>
+</html>
